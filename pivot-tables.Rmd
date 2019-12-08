@@ -20,7 +20,7 @@ our data is about lobsters
 
 ```{r}
 
-lobsters <- read_xlsx(here("R-workshop-data/lobsters.xlsx"))
+lobsters <- read_xlsx(here("R-workshop-data/lobsters2.xlsx"))
 
 ```
 
