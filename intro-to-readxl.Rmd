@@ -6,6 +6,7 @@ output: html_document
 ---
 
 # Learning `readxl`
+### Hello! 
 
 We are working with data in readxl and it's going to be amazing!
 
@@ -16,7 +17,7 @@ We're going to use packages:
 - writexl
 - here
 
-```{r packages}
+```{r packages, message=FALSE}
 library(tidyverse)
 library(readxl)
 library(writexl)
@@ -77,14 +78,17 @@ kelp_golb <- read_excel(here("R-workshop-data","kelp_counts_curated.xlsx"),
 
 ```{r}
 # Create a path to get to the data
-# kelp_path <- here("R-workshop-data","kelp_counts_curated.xlsx")
+```
 
-# Command + Shift + M for new pipe operator
+
+```{r}
+# kelp_path <- here("R-workshop-data","kelp_counts_curated.xlsx")
+# 
+# # Command + Shift + M for new pipe operator
 # kelp_all_sites <- kelp_path %>%
 #   excel_sheets() %>%
 #   set_names() %>%
 #   purrr::map_df(read_excel, kelp_path)
-
 ```
 
 ### Write a file back to an Excel spreadsheet
